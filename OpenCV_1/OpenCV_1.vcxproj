@@ -148,6 +148,12 @@
   <ItemGroup>
     <ClInclude Include="Pixel.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\lenna.png" />
+    <Image Include="images\orange.jpg" />
+    <Image Include="images\stuff_color_1.png" />
+    <Image Include="images\stuff_color_2.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

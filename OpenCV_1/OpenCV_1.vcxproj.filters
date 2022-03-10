@@ -27,4 +27,18 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\lenna.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="images\orange.jpg">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="images\stuff_color_1.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="images\stuff_color_2.png">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
