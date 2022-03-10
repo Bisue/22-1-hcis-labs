@@ -24,7 +24,7 @@ int main()
 	// 연산 대상 이미지 로드
 	// (이미지들은 <프로젝트경로/images/> 에 들어있는 것으로 가정)
 	Mat image1 = imread("./images/stuff_color_1.png");
-	//Mat image2 = imread("./images/stuff_color_2.png");
+	Mat image2 = imread("./images/stuff_color_2.png");
 	//Mat image1 = imread("./images/lenna.png");
 	//Mat image2 = imread("./images/orange.jpg");
 
@@ -32,13 +32,13 @@ int main()
 	cpixel = CPixel();
 
 	// 문제별 함수 분리
-	//solve1_addition(image1, image2);
-	//solve2_subtraction(image1, image2);
-	//solve3_blending(image1, image2, 0.66);
+	solve1_addition(image1, image2);
+	solve2_subtraction(image1, image2);
+	solve3_blending(image1, image2, 0.66);
 	solve4_adjustment(image1, 1.5, 30);
 	
 	// fade-out-in 애니메이션
-	//test1_fade_animation(image1, image2, 3000);
+	test1_fade_animation(image1, image2, 3000);
 }
 
 // 실습 1-1, 1-2
@@ -105,14 +105,12 @@ void solve4_adjustment(const Mat& image, const double& contrast, const int& brig
 	// opencv의 cvtColor 함수를 이용해 RGB 컬러 이미지를 흑백 이미지로 변환
 	Mat grayScaled;
 	cvtColor(image, grayScaled, COLOR_RGB2GRAY);
-	imwrite("3-1-gray.jpg", grayScaled);
 
 	// CPixel 클래스를 이용해 흑백 이미지의 contrast, brightness 조정
 	Mat result = cpixel.GS_LUT_basic_contrast_brightness(grayScaled, contrast, brightness);
 
 	// 결과 이미지 출력
 	imshow("Output Image", result);
-	imwrite("3-1.jpg", result);
 
 	waitKey();
 }
@@ -150,7 +148,10 @@ void test1_fade_animation(const Mat& image1, const Mat& image2, const int& durat
 		// 프레임 연산 종료 시각 capture
 		clock_t frameEnd = clock();
 		// 현재 프레임의 남은 시간만큼 delay
-		waitKey(frameStart + msPerFrame - frameEnd);
+		int delay = frameStart + msPerFrame - frameEnd;
+		if (delay > 0) {
+			waitKey(delay);
+		}
 	}
 	// 애니메이션 재생 시간 측정 종료
 	clock_t animEnd = clock();
