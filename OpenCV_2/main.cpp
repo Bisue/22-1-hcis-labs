@@ -4,7 +4,7 @@
 
 using namespace cv;
 
-// 문제 2-4
+// 문제 2-1
 void solve(const Mat&);
 
 // 모든 함수에서 편하게 쓰도록 전역 CPixel 인스턴스 선언
@@ -23,20 +23,19 @@ int main()
 	solve(image1);
 }
 
-// 문제 2-4
+// 문제 2-1
 void solve(const Mat& image)
 {
+	imwrite("./outputs/2_1_input.png", image);
+
 	// 두 개의 이미지를 각각 컬러 이미지를 흑백 이미지로 변경
 	Mat grayScaled;
 	cvtColor(image, grayScaled, COLOR_BGR2GRAY);
 
-	imwrite("./outputs/2_4_input.png", grayScaled);
+	// 흑백 이미지 출력
+	imshow("Gray Scaled Image", grayScaled);
 
-	// GS_adaptive_threshold 메서드를 이용해 MEAN 방식으로 이미지를 지역적으로 반복하여 이진화
-	Mat binaryImage = cpixel.GS_adaptive_threshold(grayScaled, 150, ADAPTIVE_THRESH_MEAN_C, THRESH_BINARY);
-	imshow("Binary Image", binaryImage);
-
-	imwrite("./outputs/2_4_output.png", binaryImage);
+	imwrite("./outputs/2_1_output.png", grayScaled);
 
 	waitKey();
 }
