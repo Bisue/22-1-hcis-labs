@@ -152,6 +152,7 @@
     <ClCompile Include="22.cpp" />
     <ClCompile Include="21.cpp" />
     <ClCompile Include="24.cpp" />
+    <ClCompile Include="25.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Filter.cpp" />
     <ClCompile Include="01.cpp" />
