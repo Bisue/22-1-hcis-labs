@@ -14,16 +14,20 @@ Mat makeGrayScaled(const Mat& image) {
 
 int main()
 {
-	// input 이미지 로드 (./images 디렉토리에 이미지들이 있다고 가정)
+	// input 이미지 로드 (./images 디렉토리에 원본 컬러 이미지들이 있다고 가정)
 	Mat originLenna = imread("./images/lenna.png");
 	Mat originJenny = imread("./images/jenny.jpg");
 	// input 이미지 저장 (./outputs 디렉토리가 있다고 가정)
 	imwrite("./outputs/0_1_input_1.png", originLenna);
 	imwrite("./outputs/0_1_input_2.png", originJenny);
 
+	// =======================================================
+
 	// 이미지 각각 흑백 변환
 	Mat grayLenna = makeGrayScaled(originLenna);
 	Mat grayJenny = makeGrayScaled(originJenny);
+
+	// =======================================================
 
 	// output 이미지 디스플레이
 	imshow("Lenna", grayLenna);
