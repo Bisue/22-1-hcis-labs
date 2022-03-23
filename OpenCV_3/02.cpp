@@ -25,7 +25,7 @@
 //
 //	// =======================================================
 //
-//	// 이미지 각각 흑백 변환
+//	// 두 흑백 이미지 각각 blurred 된 이미지 생성
 //	Mat blurredLenna = makeBlurred(grayLenna);
 //	Mat blurredJenny = makeBlurred(grayJenny);
 //
