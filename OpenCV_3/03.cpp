@@ -32,7 +32,8 @@ int main()
 
 	// =======================================================
 
-	// 이미지 각각 흑백 변환
+	// 흑백 이미지에서 bluured 된 이미지를 뺌
+	// (edge 추출)
 	Mat edgeLenna = makeSubtracted(grayLenna, blurredLenna);
 	Mat edgeJenny = makeSubtracted(grayJenny, blurredJenny);
 
