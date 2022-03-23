@@ -146,6 +146,7 @@
     <ClCompile Include="03.cpp" />
     <ClCompile Include="04.cpp" />
     <ClCompile Include="11.cpp" />
+    <ClCompile Include="12.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Filter.cpp" />
     <ClCompile Include="01.cpp" />
