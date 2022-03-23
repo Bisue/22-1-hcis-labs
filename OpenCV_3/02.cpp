@@ -16,7 +16,7 @@
 //
 //int main()
 //{
-//	// input 이미지 로드 (0-1에서 만든 grayscaled 이미지 사용)
+//	// input 이미지 로드 (이전에 만든 grayscaled 이미지 사용)
 //	Mat grayLenna = imread("./outputs/0_1_output_1.png");
 //	Mat grayJenny = imread("./outputs/0_1_output_2.png");
 //	// input 이미지 저장 (./outputs 디렉토리가 있다고 가정)

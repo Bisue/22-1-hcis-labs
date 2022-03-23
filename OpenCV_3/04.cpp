@@ -16,7 +16,7 @@
 //
 //int main()
 //{
-//	// input 이미지 로드 (0-1, 0-2 에서 만든 이미지들 사용)
+//	// input 이미지 로드 (이전에 만든 이미지들 사용)
 //	Mat grayLenna = imread("./outputs/0_1_output_1.png");
 //	Mat edgeLenna = imread("./outputs/0_3_output_1.png");
 //
