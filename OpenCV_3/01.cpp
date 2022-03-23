@@ -14,23 +14,23 @@ Mat makeGrayScaled(const Mat& image) {
 
 int main()
 {
-	// 원본 이미지 로드 (./images 디렉토리에 이미지들이 있다고 가정)
+	// input 이미지 로드 (./images 디렉토리에 이미지들이 있다고 가정)
 	Mat originLenna = imread("./images/lenna.png");
 	Mat originJenny = imread("./images/jenny.jpg");
-	// 원본 이미지 저장 (./outputs 디렉토리가 있다고 가정)
-	imwrite("./outputs/1_1_input_1.png", originLenna);
-	imwrite("./outputs/1_1_input_2.png", originJenny);
+	// input 이미지 저장 (./outputs 디렉토리가 있다고 가정)
+	imwrite("./outputs/0_1_input_1.png", originLenna);
+	imwrite("./outputs/0_1_input_2.png", originJenny);
 
 	// 이미지 각각 흑백 변환
 	Mat grayLenna = makeGrayScaled(originLenna);
 	Mat grayJenny = makeGrayScaled(originJenny);
 
-	// 결과 이미지 디스플레이
+	// output 이미지 디스플레이
 	imshow("Lenna", grayLenna);
 	imshow("Jenny", grayJenny);
-	// 결과 이미지 저장 (./output 디렉토리가 있다고 가정)
-	imwrite("./outputs/1_1_output_1.png", grayLenna);
-	imwrite("./outputs/1_1_output_2.png", grayJenny);
+	// output 이미지 저장 (./output 디렉토리가 있다고 가정)
+	imwrite("./outputs/0_1_output_1.png", grayLenna);
+	imwrite("./outputs/0_1_output_2.png", grayJenny);
 
 	waitKey();
 }
