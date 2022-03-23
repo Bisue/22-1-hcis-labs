@@ -14,7 +14,7 @@ Mat makeGrayScaled(const Mat& image) {
 
 int main()
 {
-	// 원본 이미지 저장 (./images 디렉토리에 이미지들이 있다고 가정)
+	// 원본 이미지 로드 (./images 디렉토리에 이미지들이 있다고 가정)
 	Mat originLenna = imread("./images/lenna.png");
 	Mat originJenny = imread("./images/jenny.jpg");
 	// 원본 이미지 저장 (./outputs 디렉토리가 있다고 가정)
