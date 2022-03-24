@@ -7,7 +7,7 @@
 //int main()
 //{
 //	// input 이미지 로드 (이전에 만든 이미지 사용)
-//	// (흑백 이미지로 명시)
+//	// (1채널 이미지로 명시)
 //	Mat v = imread("./outputs/2_2_output_3.png", 0);
 //	// input 이미지 저장 (./outputs 디렉토리가 있다고 가정)
 //	imwrite("./outputs/2_3_input.png", v);

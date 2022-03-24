@@ -7,7 +7,7 @@
 //int main()
 //{
 //	// input 이미지 로드 (이전에 만든 이미지 사용)
-//	// (흑백 이미지로 명시)
+//	// (1채널 이미지로 명시)
 //	Mat equalizedR = imread("./outputs/1_2_output_1.png", 0);
 //	Mat equalizedG = imread("./outputs/1_2_output_2.png", 0);
 //	Mat equalizedB = imread("./outputs/1_2_output_3.png", 0);
