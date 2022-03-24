@@ -4,14 +4,14 @@
 //
 //using namespace cv;
 //
-//// blurred 된 이미지를 만들어 반환
+//// 입력 이미지의 blurred 된 이미지를 만들어 반환
 //Mat makeBlurred(const Mat& image)
 //{
 //	CFilter cf;
 //
 //	// CFilter의 blurring 메서드 사용
-//	// (option 1 - OpenCV 버전)
-//	return cf.GS_blurring(image, 1, CV_BLUR);
+//	// (option 1 - OpenCV 버전, GAUSSIAN 필터 사용)
+//	return cf.GS_blurring(image, 1, CV_GAUSSIAN);
 //}
 //
 //int main()

@@ -3,7 +3,7 @@
 //
 //using namespace cv;
 //
-//// 이미지의 흑백 이미지 반환
+//// 입력 이미지의 흑백 이미지 반환
 //Mat makeGrayScaled(const Mat& image) {
 //	Mat gray;
 //	// cv::cvtColor를 이용해 BGR에서 GRAY이미지로 변환
