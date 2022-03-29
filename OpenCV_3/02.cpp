@@ -1,17 +1,17 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
-#include "Filter.h"
 
 using namespace cv;
 
 // 입력 이미지의 blurred 된 이미지를 만들어 반환
 Mat makeBlurred(const Mat& image)
 {
-	CFilter cf;
+	// cv::GaussianBlur 함수를 사용해서, 15x15 크기의 Gaussian 마스크로
+	// 이미지를 blurring 함
+	Mat blurred;
+	GaussianBlur(image, blurred, cv::Size(15, 15), 0, 0);
 
-	// CFilter의 blurring 메서드 사용
-	// (option - GAUSSIAN 필터 사용, method - 필터 크기 7x7로 설정)
-	return cf.GS_blurring(image, CV_GAUSSIAN, 2);
+	return blurred;
 }
 
 int main()
