@@ -12,9 +12,9 @@
 //	// CGeometry의 GS_affineRotate 메서드를 사용해
 //	// 이미지를 affine 변환시킴.
 //	// (이때, 회전은 시키지 않고 확대/축소만 하기 위하여 angle은 0으로 할당)
-//	Mat rotated = cg.GS_affineRotate(image, 0, amount);
+//	Mat scaled = cg.GS_affineRotate(image, 0, amount);
 //
-//	return rotated;
+//	return scaled;
 //}
 //
 //int main()
