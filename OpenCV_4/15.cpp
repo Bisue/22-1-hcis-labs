@@ -10,7 +10,7 @@ Mat getLaplacianOfGaussian(const Mat& image)
 	CEdge ce;
 	CFilter cf;
 
-	Mat gaussian = cf.GS_blurring(image, CV_GAUSSIAN, 0);
+	Mat gaussian = cf.GS_gaussian_smoothing_filtering(image, 2);
 
 	Mat laplacian = ce.GS_laplacian_edge_Laplacian(gaussian);
 
