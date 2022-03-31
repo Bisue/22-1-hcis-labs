@@ -143,6 +143,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="11.cpp" />
+    <ClCompile Include="12.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Edge.cpp" />
     <ClCompile Include="Filter.cpp" />
