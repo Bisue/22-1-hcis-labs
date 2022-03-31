@@ -39,9 +39,7 @@ int main()
 		}
 	}
 
-	// subtract
 	CPixel cp;
-
 	// 원본 이미지에서 30*12*5도 회전시킨 이미지를 뺌
 	Mat subtracted = cp.GS_subtract_image(originBriefcase, rotated);
 
