@@ -155,6 +155,7 @@
     <ClCompile Include="32.cpp" />
     <ClCompile Include="31.cpp" />
     <ClCompile Include="33.cpp" />
+    <ClCompile Include="34.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Edge.cpp" />
     <ClCompile Include="Filter.cpp" />
