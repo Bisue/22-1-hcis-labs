@@ -149,6 +149,7 @@
     <ClCompile Include="14.cpp" />
     <ClCompile Include="15.cpp" />
     <ClCompile Include="2.cpp" />
+    <ClCompile Include="3.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Edge.cpp" />
     <ClCompile Include="Filter.cpp" />
