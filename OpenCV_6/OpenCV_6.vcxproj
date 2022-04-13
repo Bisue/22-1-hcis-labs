@@ -142,16 +142,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="11.cpp" />
+    <ClCompile Include="Color.cpp" />
     <ClCompile Include="Edge.cpp" />
+    <ClCompile Include="Filter.cpp" />
     <ClCompile Include="ImageAnalysis.cpp" />
     <ClCompile Include="Morph.cpp" />
     <ClCompile Include="Pixel.cpp" />
+    <ClCompile Include="Util.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Color.h" />
     <ClInclude Include="Edge.h" />
+    <ClInclude Include="Filter.h" />
     <ClInclude Include="ImageAnalysis.h" />
     <ClInclude Include="Morph.h" />
     <ClInclude Include="Pixel.h" />
+    <ClInclude Include="Util.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

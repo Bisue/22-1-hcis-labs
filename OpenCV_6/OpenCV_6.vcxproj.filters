@@ -27,6 +27,18 @@
     <ClCompile Include="Pixel.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="11.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Util.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Filter.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Edge.h">
@@ -39,6 +51,15 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="Pixel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Filter.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
