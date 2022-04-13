@@ -103,8 +103,8 @@ int main()
 	// =======================================================
 
 	// 최종 출력 이미지 확인
-	imshow("erosion of stuff", labeledStuff);
-	imshow("erosion of rice", labeledRice);
+	imshow("labeled stuff", labeledStuff);
+	imshow("labeled rice", labeledRice);
 	// 최종 출력 이미지 파일로 저장
 	// (프로젝트폴더/outputs 폴더가 이미 있다고 가정)
 	imwrite("./outputs/1_5_output_1.png", labeledStuff);
