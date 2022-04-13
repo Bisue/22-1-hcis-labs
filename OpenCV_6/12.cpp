@@ -20,8 +20,8 @@
 //int main()
 //{
 //	// 입력 이미지 로드
-//	Mat erosionStuff = imread("./outputs/1_1_output_1.png");
-//	Mat erosionRice = imread("./outputs/1_1_output_2.png");
+//	Mat erosionStuff = imread("./outputs/1_1_output_1.png", 0);
+//	Mat erosionRice = imread("./outputs/1_1_output_2.png", 0);
 //	// 입력 이미지 파일로 저장
 //	// (프로젝트폴더/outputs 폴더가 이미 있다고 가정)
 //	imwrite("./outputs/1_2_input_1.png", erosionStuff);
