@@ -13,6 +13,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCV_3", "OpenCV_3\OpenCV
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCV_4", "OpenCV_4\OpenCV_4.vcxproj", "{27C2ED64-D7C3-48F9-A5EF-780C8C0DEC0D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCV_5", "OpenCV_5\OpenCV_5.vcxproj", "{EB7259DA-F9E3-4675-8574-D9E7B6364319}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenCV_6", "OpenCV_6\OpenCV_6.vcxproj", "{E962778F-D4A1-40F1-900E-A437C280E189}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +65,22 @@ Global
 		{27C2ED64-D7C3-48F9-A5EF-780C8C0DEC0D}.Release|x64.Build.0 = Release|x64
 		{27C2ED64-D7C3-48F9-A5EF-780C8C0DEC0D}.Release|x86.ActiveCfg = Release|Win32
 		{27C2ED64-D7C3-48F9-A5EF-780C8C0DEC0D}.Release|x86.Build.0 = Release|Win32
+		{EB7259DA-F9E3-4675-8574-D9E7B6364319}.Debug|x64.ActiveCfg = Debug|x64
+		{EB7259DA-F9E3-4675-8574-D9E7B6364319}.Debug|x64.Build.0 = Debug|x64
+		{EB7259DA-F9E3-4675-8574-D9E7B6364319}.Debug|x86.ActiveCfg = Debug|Win32
+		{EB7259DA-F9E3-4675-8574-D9E7B6364319}.Debug|x86.Build.0 = Debug|Win32
+		{EB7259DA-F9E3-4675-8574-D9E7B6364319}.Release|x64.ActiveCfg = Release|x64
+		{EB7259DA-F9E3-4675-8574-D9E7B6364319}.Release|x64.Build.0 = Release|x64
+		{EB7259DA-F9E3-4675-8574-D9E7B6364319}.Release|x86.ActiveCfg = Release|Win32
+		{EB7259DA-F9E3-4675-8574-D9E7B6364319}.Release|x86.Build.0 = Release|Win32
+		{E962778F-D4A1-40F1-900E-A437C280E189}.Debug|x64.ActiveCfg = Debug|x64
+		{E962778F-D4A1-40F1-900E-A437C280E189}.Debug|x64.Build.0 = Debug|x64
+		{E962778F-D4A1-40F1-900E-A437C280E189}.Debug|x86.ActiveCfg = Debug|Win32
+		{E962778F-D4A1-40F1-900E-A437C280E189}.Debug|x86.Build.0 = Debug|Win32
+		{E962778F-D4A1-40F1-900E-A437C280E189}.Release|x64.ActiveCfg = Release|x64
+		{E962778F-D4A1-40F1-900E-A437C280E189}.Release|x64.Build.0 = Release|x64
+		{E962778F-D4A1-40F1-900E-A437C280E189}.Release|x86.ActiveCfg = Release|Win32
+		{E962778F-D4A1-40F1-900E-A437C280E189}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
