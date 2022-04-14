@@ -9,14 +9,18 @@ Mat customHoughTransform(const Mat& grayscaled)
 {
 	CEdge ce;
 	
+	// 이미지의 edge 추출
 	Mat edge = ce.GS_canny_edge_Canny(grayscaled, 50, 100);
 
+	// cv::HoughLines 함수를 통해 edge 이미지의 line 성분 찾기
 	std::vector<Vec2f> lines;
 	HoughLines(edge, lines, 1, CV_PI / 180, 150);
 
+	// 찾아진 line을 그려서 반환할 이미지
 	Mat result;
 	cvtColor(grayscaled, result, COLOR_GRAY2BGR);
 
+	// 찾아진 line 들을 순환하며 result에 그림
 	for (int i = 0; i < lines.size(); i++)
 	{
 		Vec2f cur = lines[i];
