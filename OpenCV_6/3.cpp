@@ -23,22 +23,31 @@
 //	// 찾아진 line 들을 순환하며 result에 그림
 //	for (int i = 0; i < lines.size(); i++)
 //	{
+//		// 현재 line의 rho, theta 변수화
 //		Vec2f cur = lines[i];
 //		float rho = cur[0];
 //		float theta = cur[1];
+//
+//		// 선을 그리기 위한 두개의 점
 //		Point pt1, pt2;
+//		// 극좌표의 직선 방정식을 통해 x0와 y0를 구함
 //		double a = cos(theta), b = sin(theta);
 //		double x0 = a * rho, y0 = b * rho;
 //
-//		int BIG_NUMBER = 1000000;
-//
+//		// 구하려는 직선 위의 두 점을 찾아내기 위해서
+//		// (x0, y0)를 기준으로 BIG_NUMBER 만큼 양쪽으로 떨어진
+//		// 2개의 pt1, pt2를 구함.
+//		int BIG_NUMBER = 1000;
 //		pt1.x = cvRound(x0 + BIG_NUMBER * (-b));
 //		pt1.y = cvRound(y0 + BIG_NUMBER * (a));
 //		pt2.x = cvRound(x0 - BIG_NUMBER * (-b));
 //		pt2.y = cvRound(y0 - BIG_NUMBER * (a));
+//
+//		// 구한 pt1, pt2를 잇는 파란색 직선을 그림
 //		cv::line(result, pt1, pt2, Scalar(255, 0, 0), 1, 8);
 //	}
 //
+//	// 선이 모두 그려진 result를 반환
 //	return result;
 //}
 //
